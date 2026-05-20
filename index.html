@@ -560,6 +560,69 @@
       letter-spacing: 0.1em;
     }
 
+
+    /* ── CLIENTS ── */
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 1px;
+    }
+
+    .client-card {
+      background: var(--white);
+      padding: 36px 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .client-card:hover {
+      background: var(--off-white);
+      box-shadow: inset 0 -3px 0 var(--gold);
+    }
+
+    .client-initial {
+      width: 56px; height: 56px;
+      border: 1.5px solid var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px; font-weight: 600;
+      color: var(--navy);
+      flex-shrink: 0;
+      letter-spacing: 0.02em;
+      /* swap for logo: background: url('logo.png') center/contain no-repeat; */
+    }
+
+    .client-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px; font-weight: 600;
+      color: var(--navy-dark);
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+
+    .client-type {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px; color: var(--text-muted);
+      letter-spacing: 0.12em; text-transform: uppercase;
+    }
+
+    .clients-note {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-top: none;
+      padding: 20px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 300;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       nav { padding: 0 20px; }
@@ -590,6 +653,7 @@
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#publications">Publications</a></li>
+      <li><a href="#clients">Clients</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
